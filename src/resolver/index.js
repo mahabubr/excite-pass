@@ -1,18 +1,7 @@
-const books = [
-  {
-    title: "The Awakening",
-    author: "Kate Chopin",
-  },
-  {
-    title: "City of Glass",
-    author: "Paul Auster",
-  },
-];
+import query from "./query/query.js";
 
 const resolvers = {
-  Query: {
-    books: () => books,
-  },
+  Query: query
 };
 
 export default resolvers;

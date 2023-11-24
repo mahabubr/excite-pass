@@ -21,6 +21,7 @@ async function bootstrap() {
     console.log("🔥  Database Connected");
     console.log(`🚀  Server ready at: ${url}`);
   } catch (error) {
+    console.log(error);
     console.log("Database Connection Failed");
   }
 }

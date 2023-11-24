@@ -1,11 +1,10 @@
 const typeDefs = `#graphql
-  type Book {
+  type Category {
     title: String
-    author: String
   }
 
   type Query {
-    books: [Book]
+    Category: [Category]
   }
 `;
 
