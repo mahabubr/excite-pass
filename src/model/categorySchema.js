@@ -3,10 +3,9 @@ import mongoose, { Schema } from "mongoose";
 const categorySchema = new Schema(
   {
     title: String,
+    img: String,
   },
   {
-    autoCreate: false,
-    autoIndex: false,
     timestamps: true,
   }
 );
