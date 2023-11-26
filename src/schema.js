@@ -1,4 +1,13 @@
 const typeDefs = `#graphql
+
+  type Query {
+  Category: [Category]
+  Events: [Events]
+  SingleEvent(
+    id: ID!
+  ): Events
+  }
+
   type Category {
     _id: ID!
     title: String
@@ -19,10 +28,6 @@ const typeDefs = `#graphql
     category: String
   }
 
-  type Query {
-    Category: [Category]
-    Events: [Events]
-  }
 `;
 
 export default typeDefs;

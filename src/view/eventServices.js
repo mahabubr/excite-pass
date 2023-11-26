@@ -5,6 +5,11 @@ const eventQuery = {
     const result = await Events.find({});
     return result;
   },
+  SingleEvent: async (parent, args, context) => {
+    const { id } = args;
+    const result = await Events.findById(id);
+    return result;
+  },
 };
 
 export default eventQuery;
