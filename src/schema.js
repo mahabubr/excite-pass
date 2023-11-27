@@ -6,6 +6,9 @@ const typeDefs = `#graphql
   SingleEvent(
     id: ID!
   ): Events
+  CategoryEvents(
+    id: ID!
+  ): [Events]
   }
 
   type Category {
